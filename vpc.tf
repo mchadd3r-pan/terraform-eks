@@ -23,4 +23,14 @@ module "vpc" {
     "kubernetes.io/cluster/${local.cluster_name}" = "shared"
     "kubernetes.io/role/internal-elb"             = 1
   }
+  tags = {
+    git_commit           = "af9294ca38741185c566b94c9b81a99241e2ba71"
+    git_file             = "vpc.tf"
+    git_last_modified_at = "2022-07-29 18:51:59"
+    git_last_modified_by = "alan.szlosek@hashicorp.com"
+    git_modifiers        = "alan.szlosek/im2nguyen"
+    git_org              = "mchadd3r-pan"
+    git_repo             = "terraform-eks"
+    yor_trace            = "7603c140-610d-4b33-9f4e-b11b8280632b"
+  }
 }
