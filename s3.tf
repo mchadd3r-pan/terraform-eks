@@ -33,9 +33,9 @@ resource "aws_s3_bucket" "b_log_bucket" {
 resource "aws_s3_bucket" "b_alternate" {
   bucket = "b-alternate-bucket"
   tags = {
-    git_commit           = "069ba515e71424772aeb3e2b46ac61fb6ea9ac79"
+    git_commit           = "fc62b805a37f1a442c4d2f9e2990c42f78902b2d"
     git_file             = "s3.tf"
-    git_last_modified_at = "2023-01-30 19:36:50"
+    git_last_modified_at = "2023-03-08 18:11:44"
     git_last_modified_by = "matthew.chadder@gmail.com"
     git_modifiers        = "matthew.chadder"
     git_org              = "mchadd3r-pan"
