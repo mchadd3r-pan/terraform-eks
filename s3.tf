@@ -15,6 +15,16 @@ resource "aws_s3_bucket" "b" {
   }
 }
 
+
+resource "aws_s3_bucket_versioning" "b" {
+  bucket = aws_s3_bucket.b.id
+
+  versioning_configuration {
+    status = "Enabled"
+  }
+}
+
+
 resource "aws_s3_bucket" "b_log_bucket" {
   bucket = "b-log-bucket"
   tags = {
